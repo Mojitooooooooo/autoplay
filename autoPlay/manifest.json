@@ -1,0 +1,15 @@
+{
+  "name": "autoPlay",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "智慧树自动播放刷进度",
+  "browser_action":{
+    "default_icon": "autoPlay.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://study.zhihuishu.com/*", "http://study.zhihuishu.com/*"],
+      "js": ["myscript.js"]
+    }
+  ]
+}
